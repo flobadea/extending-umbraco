@@ -10,4 +10,8 @@
     <key alias="productsMenu">Products</key>
     <key alias="categoriesMenu">Categories</key>
   </area>
+  <area alias="actions">
+    <key alias="menu1">Menu 1</key>
+    <key alias="menu2">Menu 2</key>
+  </area>
 </language>

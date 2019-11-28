@@ -257,8 +257,11 @@
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
     <Content Include="App_Plugins\orders\backoffice\demoTree\list.html" />
     <Content Include="App_Plugins\orders\backoffice\ordersTree\categories.html" />
+    <Content Include="App_Plugins\orders\backoffice\ordersTree\create.html" />
+    <Content Include="App_Plugins\orders\backoffice\ordersTree\menu1.html" />
     <Content Include="App_Plugins\orders\backoffice\ordersTree\orders.html" />
     <Content Include="App_Plugins\orders\backoffice\ordersTree\products.html" />
+    <Content Include="App_Plugins\orders\custom.service.js" />
     <Content Include="App_Plugins\orders\Lang\en-us.xml" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\Lang\cs-CZ.user.xml" />
@@ -284,7 +287,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OrderManagement\CustomAction.cs" />
+    <Compile Include="OrderManagement\CustomMenuItem.cs" />
     <Compile Include="OrderManagement\DemoTreeController.cs" />
+    <Compile Include="OrderManagement\MenuRenderingSubscriber.cs" />
     <Compile Include="OrderManagement\OrderManagementApplication.cs" />
     <Compile Include="OrderManagement\OrderManagementSearch.cs" />
     <Compile Include="OrderManagement\OrderManagementTreeController.cs" />
@@ -314,6 +320,7 @@
     <Content Include="config\BackOfficeTours\getting-started.json" />
     <Content Include="config\applications.config" />
     <Content Include="config\404handlers.config" />
+    <Content Include="App_Plugins\orders\package.manifest" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />

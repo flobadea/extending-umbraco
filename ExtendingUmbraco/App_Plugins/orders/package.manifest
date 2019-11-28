@@ -1,0 +1,9 @@
+﻿{
+  "javascript": [
+    '~/App_Plugins/orders/custom.service.js',
+  ],
+  "css": [
+  ],
+  "dashboards": [
+  ]
+}

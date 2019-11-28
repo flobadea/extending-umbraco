@@ -1,5 +1,6 @@
 ﻿using System.Globalization;
 using System.Net.Http.Formatting;
+using umbraco.BusinessLogic.Actions;
 using Umbraco.Web.Models.Trees;
 using Umbraco.Web.Mvc;
 using Umbraco.Web.Trees;
@@ -13,7 +14,75 @@ namespace ExtendingUmbraco.OrderManagement
         protected override MenuItemCollection GetMenuForNode(
                  string id, FormDataCollection queryStrings)
         {
-            return new MenuItemCollection();
+            //return CreateMenuSimple(id, queryStrings);
+            //return CreateMenuParamRoute(id, queryStrings);
+            //return CreateMenuMoreItems(id, queryStrings);
+            return CreateMenuCustomAction(id, queryStrings);
+        }
+        private MenuItemCollection CreateMenuCustomAction(string id, FormDataCollection queryStrings)
+        {
+            var textService = ApplicationContext.Services.TextService;
+            var culture = CultureInfo.CurrentCulture;
+            if (id == "-1")
+            {
+                return null;
+            }
+            var menu = new MenuItemCollection();
+            //menu.Items.Add<CustomAction>("Custom");
+            menu.Items.Add<CustomMenuItem, CustomAction>("Custom"/*or use a localized text*/);
+            return menu;
+        }
+        private MenuItemCollection CreateMenuMoreItems(string id, FormDataCollection queryStrings)
+        {
+            var textService = ApplicationContext.Services.TextService;
+            var culture = CultureInfo.CurrentCulture;
+            if (id == "-1")
+            {
+                return null;
+            }
+            var menu = new MenuItemCollection();
+            menu.Items.Add<CreateChildEntity, ActionNew>
+                (textService.Localize(ActionNew.Instance.Alias, culture));
+
+            var menuItem = new MenuItem("menu1", textService.Localize("menu1", culture));
+            menuItem.LaunchDialogView(
+               "/App_Plugins/orders/backoffice/ordersTree/menu1.html",
+               "Are you sure?");
+            menuItem.Icon = "add";
+            menu.Items.Add(menuItem);
+
+            menuItem = new MenuItem("menu2", textService.Localize("menu2", culture));
+            menuItem.SeperatorBefore = true;
+            menuItem.NavigateToRoute("orders/ordersTree/create");
+            menu.Items.Add(menuItem);
+
+            return menu;
+        }
+        private MenuItemCollection CreateMenuParamRoute(string id, FormDataCollection queryStrings)
+        {
+            var textService = ApplicationContext.Services.TextService;
+            var culture = CultureInfo.CurrentCulture;
+            if (id == "-1")
+            {
+                return null;
+            }
+            var menu = new MenuItemCollection();
+            menu.Items.Add<CreateChildEntity, ActionNew>
+                (textService.Localize(ActionNew.Instance.Alias, culture));
+            return menu;
+        }
+            private MenuItemCollection CreateMenuSimple(string id, FormDataCollection queryStrings)
+        {
+            var textService = ApplicationContext.Services.TextService;
+            var culture = CultureInfo.CurrentCulture;
+            if (id == "-1")
+            {
+                return null;
+            }
+            var menu = new MenuItemCollection();
+            menu.Items.Add<ActionNew>(textService.Localize(
+         ActionNew.Instance.Alias, culture));
+            return menu;
         }
         protected override TreeNodeCollection GetTreeNodes(
                  string id, FormDataCollection queryStrings)

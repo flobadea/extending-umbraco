@@ -454,6 +454,8 @@ umbraco.businesslogic.MembersApplicationDefinition, businesslogic, Version=1.0.6
 umbraco.businesslogic.TranslationApplicationDefinition, businesslogic, Version=1.0.6974.19961, Culture=neutral, PublicKeyToken=null
 umbraco.BusinessLogic.ApplicationRegistrar, businesslogic, Version=1.0.6974.19961, Culture=neutral, PublicKeyToken=null
 umbraco.BusinessLogic.ApplicationTreeRegistrar, businesslogic, Version=1.0.6974.19961, Culture=neutral, PublicKeyToken=null
+ExtendingUmbraco.OrderManagement.CustomAction, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+ExtendingUmbraco.OrderManagement.MenuRenderingSubscriber, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 ExtendingUmbraco.OrderManagement.OrderManagementApplication, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 ExtendingUmbraco.OrderManagement.OrderManagementTreeController, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 ExtendingUmbraco.OrderManagement.Startup, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -557,6 +559,7 @@ Umbraco.Core.Auditing.AuditEventHandler, Umbraco.Core, Version=1.0.6974.19955, C
 umbraco.providers.members.MembershipEventHandler, umbraco.providers, Version=1.0.6974.19962, Culture=neutral, PublicKeyToken=null
 umbraco.BusinessLogic.ApplicationRegistrar, businesslogic, Version=1.0.6974.19961, Culture=neutral, PublicKeyToken=null
 umbraco.BusinessLogic.ApplicationTreeRegistrar, businesslogic, Version=1.0.6974.19961, Culture=neutral, PublicKeyToken=null
+ExtendingUmbraco.OrderManagement.MenuRenderingSubscriber, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 ExtendingUmbraco.OrderManagement.Startup, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
@@ -704,6 +707,7 @@ umbraco.interfaces.IAction
 
 umbraco.cms.presentation.developer.RelationTypes.TreeMenu.ActionDeleteRelationType, umbraco, Version=1.0.6974.19963, Culture=neutral, PublicKeyToken=null
 umbraco.cms.presentation.developer.RelationTypes.TreeMenu.ActionNewRelationType, umbraco, Version=1.0.6974.19963, Culture=neutral, PublicKeyToken=null
+ExtendingUmbraco.OrderManagement.CustomAction, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 umbraco.businesslogic.Actions.ActionCreateBlueprintFromContent, cms, Version=1.0.6974.19961, Culture=neutral, PublicKeyToken=null
 umbraco.BusinessLogic.Actions.PlaceboAction, cms, Version=1.0.6974.19961, Culture=neutral, PublicKeyToken=null
 umbraco.BusinessLogic.Actions.ActionAssignDomain, cms, Version=1.0.6974.19961, Culture=neutral, PublicKeyToken=null
