@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language alias="en" intName="English (US)"
+          localName="English (US)" lcid="" culture="en-us">
+  <area alias="sections">
+    <key alias="orders">Order Managment</key>
+  </area>
+  <area alias="treeHeaders">
+    <key alias="ordersTree">Order Management</key>
+    <key alias="ordersMenu">Orders</key>
+    <key alias="productsMenu">Products</key>
+    <key alias="categoriesMenu">Categories</key>
+  </area>
+</language>
