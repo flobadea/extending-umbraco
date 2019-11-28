@@ -1,9 +1,15 @@
 ﻿{
-  "javascript": [
-    '~/App_Plugins/orders/custom.service.js',
-  ],
-  "css": [
-  ],
-  "dashboards": [
-  ]
+    "javascript": [
+      "~/App_Plugins/orders/common/Chart.js",
+      "~/App_Plugins/orders/common/angular-chart.js",
+      "~/App_Plugins/orders/common/orders.module.js",
+
+      "~/App_Plugins/orders/custom.service.js",
+      "~/App_Plugins/orders/dashboards/dashboard.service.js",
+      "~/App_Plugins/orders/dashboards/top5.controller.js",
+      "~/App_Plugins/orders/dashboards/sales.controller.js"
+    ],
+    "css": [
+      "~/App_Plugins/orders/dashboards/dashboard.css"
+    ]
 }

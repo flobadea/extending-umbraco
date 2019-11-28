@@ -1,0 +1,12 @@
+﻿<div ng-controller="DailySalesController as vm">
+    <umb-button action="vm.refresh()"
+                type="button" button-style="success"
+                state="vm.refreshButtonState"
+                shortcut="ctrl+r" label-key="refresh"
+                disabled="vm.refreshButtonState === 'busy'"></umb-button>
+    <div class="chart-container">
+        <canvas id="bar" class="chart chart-bar"
+                chart-data="vm.data" chart-labels="vm.labels"
+                chart-series="vm.series" chart-options="vm.options"></canvas>
+    </div>
+</div>

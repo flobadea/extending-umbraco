@@ -261,7 +261,16 @@
     <Content Include="App_Plugins\orders\backoffice\ordersTree\menu1.html" />
     <Content Include="App_Plugins\orders\backoffice\ordersTree\orders.html" />
     <Content Include="App_Plugins\orders\backoffice\ordersTree\products.html" />
+    <Content Include="App_Plugins\orders\common\angular-chart.js" />
+    <Content Include="App_Plugins\orders\common\Chart.js" />
+    <Content Include="App_Plugins\orders\common\orders.module.js" />
     <Content Include="App_Plugins\orders\custom.service.js" />
+    <Content Include="App_Plugins\orders\dashboards\dashboard.css" />
+    <Content Include="App_Plugins\orders\dashboards\sales.controller.js" />
+    <Content Include="App_Plugins\orders\dashboards\top5.controller.js" />
+    <Content Include="App_Plugins\orders\dashboards\dashboard.service.js" />
+    <Content Include="App_Plugins\orders\dashboards\sales-dashboard.html" />
+    <Content Include="App_Plugins\orders\dashboards\top5-dashboard.html" />
     <Content Include="App_Plugins\orders\Lang\en-us.xml" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\Lang\cs-CZ.user.xml" />

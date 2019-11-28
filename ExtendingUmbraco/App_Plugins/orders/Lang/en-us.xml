@@ -14,4 +14,7 @@
     <key alias="menu1">Menu 1</key>
     <key alias="menu2">Menu 2</key>
   </area>
+  <area alias="general">
+    <key alias="refresh">Refresh</key>
+  </area>
 </language>
