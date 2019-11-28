@@ -1,0 +1,56 @@
+﻿<div ng-controller="ServicesDashboardController as vm">
+    <div>{{vm.localizedText}}</div>
+    <div>{{vm.localizedText2}}</div>
+    <div style="margin:10px">
+        <button ng-click="vm.showError()"
+                class="btn btn-default btn-danger">
+            Show Error
+        </button>
+        <button ng-click="vm.showWarning()"
+                class="btn btn-default btn-warning">
+            Show Warning
+        </button>
+        <button ng-click="vm.showSuccess()"
+                class="btn btn-default btn-success">
+            Show Success
+        </button>
+        <button ng-click="vm.showNotification()"
+                class="btn btn-default">
+            Show Notification
+        </button>
+        <button ng-click="vm.add()"
+                class="btn btn-default">
+            Add
+        </button>
+        <button ng-click="vm.showConfirmation()"
+                class="btn btn-default">
+            Confirmation
+        </button>
+    </div>
+    <div style="margin:10px">
+        <button ng-click="vm.showIconPicker()"
+                class="btn btn-default">
+            Icon Picker
+        </button>
+        <button ng-click="vm.showMediaPicker()"
+                class="btn btn-default">
+            Media Picker
+        </button>
+        <button ng-click="vm.showLinkPicker()"
+                class="btn btn-default">
+            Link Picker
+        </button>
+        <button ng-click="vm.showMemberPicker()"
+                class="btn btn-default">
+            Member Picker
+        </button>
+        <button ng-click="vm.showTreePicker()"
+                class="btn btn-default">
+            Tree Picker
+        </button>
+        <button ng-click="vm.showDialog()"
+                class="btn btn-default">
+            Dialog
+        </button>
+    </div>
+</div>

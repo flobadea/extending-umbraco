@@ -1,15 +1,20 @@
 ﻿{
-    "javascript": [
-      "~/App_Plugins/orders/common/Chart.js",
-      "~/App_Plugins/orders/common/angular-chart.js",
-      "~/App_Plugins/orders/common/orders.module.js",
+  "javascript": [
+    "~/App_Plugins/orders/common/Chart.js",
+    "~/App_Plugins/orders/common/angular-chart.js",
+    "~/App_Plugins/orders/common/orders.module.js",
+    "~/App_Plugins/orders/common/confirmation.controller.js",
+    "~/App_Plugins/orders/common/dialog.controller.js",
 
-      "~/App_Plugins/orders/custom.service.js",
-      "~/App_Plugins/orders/dashboards/dashboard.service.js",
-      "~/App_Plugins/orders/dashboards/top5.controller.js",
-      "~/App_Plugins/orders/dashboards/sales.controller.js"
-    ],
-    "css": [
-      "~/App_Plugins/orders/dashboards/dashboard.css"
-    ]
+    "~/App_Plugins/orders/custom.service.js",
+    "~/App_Plugins/orders/dashboards/dashboard.service.js",
+    "~/App_Plugins/orders/dashboards/top5.controller.js",
+    "~/App_Plugins/orders/dashboards/sales.controller.js",
+    "~/App_Plugins/orders/backoffice/ordersTree/orders.controller.js",
+    "~/App_Plugins/orders/dashboards/services-dashboard.controller.js"
+  ],
+  "css": [
+    "~/App_Plugins/orders/dashboards/dashboard.css",
+    "~/App_Plugins/orders/common/dialog.css"
+  ]
 }

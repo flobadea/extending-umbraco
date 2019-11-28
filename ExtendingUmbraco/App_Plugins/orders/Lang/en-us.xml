@@ -17,4 +17,9 @@
   <area alias="general">
     <key alias="refresh">Refresh</key>
   </area>
+  <area alias="demo">
+    <key alias="header">Header</key>
+    <key alias="header2">Header %0% %1%</key>
+  </area>
+
 </language>

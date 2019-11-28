@@ -1,0 +1,12 @@
+﻿<div class="confirmation" ng-controller="ConfirmationController as vm">
+    <div class="title">{{vm.title}}</div>
+    <div class="message">{{vm.message}}</div>
+    <button class="btn btn-success"
+            ng-click="vm.cancel()">
+        {{vm.cancelText}}
+    </button>
+    <button class="btn btn-warning"
+            ng-click="vm.ok()">
+        {{vm.okText}}
+    </button>
+</div>

@@ -1,0 +1,31 @@
+﻿.dialog-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 10px;
+    height: 97%;
+}
+
+.dialog-fields {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+    .dialog-fields * {
+        margin: 5px;
+        width: 100%;
+    }
+
+.dialog-buttons {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+    .dialog-buttons * {
+        margin: 5px;
+    }
+
+    .dialog-buttons a {
+        cursor: pointer;
+    }
