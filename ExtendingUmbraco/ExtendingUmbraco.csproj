@@ -273,6 +273,8 @@
     <Content Include="App_Plugins\orders\dashboards\dashboard.css" />
     <Content Include="App_Plugins\orders\dashboards\directives-dashboard.controller.js" />
     <Content Include="App_Plugins\orders\dashboards\directives-dashboard.html" />
+    <Content Include="App_Plugins\orders\dashboards\editors.controller.js" />
+    <Content Include="App_Plugins\orders\dashboards\editors.html" />
     <Content Include="App_Plugins\orders\dashboards\sales.controller.js" />
     <Content Include="App_Plugins\orders\dashboards\services-dashboard.controller.js" />
     <Content Include="App_Plugins\orders\dashboards\services-dashboard.html" />

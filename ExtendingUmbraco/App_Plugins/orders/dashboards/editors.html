@@ -1,0 +1,12 @@
+﻿<div ng-controller="EditorsController as vm">
+    <form novalidate name="form2" class="form-horizontal" val-form-manager>
+        <div ng-repeat="item in vm.properties">
+            <umb-property property="item">
+                <umb-property-editor model="item"></umb-property-editor>
+            </umb-property>
+        </div>
+        <umb-button action="vm.submit()"
+                    type="button" button-style="success" label="Submit">
+        </umb-button>
+    </form>
+</div>

@@ -12,7 +12,8 @@
     "~/App_Plugins/orders/dashboards/sales.controller.js",
     "~/App_Plugins/orders/backoffice/ordersTree/orders.controller.js",
     "~/App_Plugins/orders/dashboards/services-dashboard.controller.js",
-    "~/App_Plugins/orders/dashboards/directives-dashboard.controller.js"
+    "~/App_Plugins/orders/dashboards/directives-dashboard.controller.js",
+    "~/App_Plugins/orders/dashboards/editors.controller.js"
   ],
   "css": [
     "~/App_Plugins/orders/dashboards/dashboard.css",
