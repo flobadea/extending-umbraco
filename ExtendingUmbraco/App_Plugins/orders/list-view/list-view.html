@@ -1,0 +1,83 @@
+﻿<table>
+    <tr>
+        <th></th>
+        <th ng-repeat="col in config.columns" ng-click="onSortChanged(col)"
+            ng-class="{'sortable':col.allowSorting}">
+            {{col.header}}
+            <span>
+                <i class="fa" ng-class="{'fa-chevron-up':isAscending===true,
+  'fa-chevron-down':isAscending===false}"
+                   ng-show="showSort(col.fieldName)"></i>
+            </span>
+        </th>
+
+    </tr>
+    <tr ng-if="showFilterRow()">
+        <th></th>
+        <th ng-repeat="col in config.columns">
+            <div class="input-container">
+                <input type="text" class="filter-control"
+                       ng-show="col.allowFiltering"
+                       ng-model="col.filterValue"
+                       ng-change="filterChanged(col.filterValue, col.fieldName)" />
+            </div>
+        </th>
+    </tr>
+    <tr ng-repeat="item in pageInfo.data"
+        ng-click="onSelectedItem(item)"
+        ng-class="{'selected-row':selectedItem==item,
+   'can-select':config.selectionEnabled}">
+        <td>
+            <span ng-show="selectedItem==item">
+                <i class="fa fa-check"></i>
+            </span>
+        </td>
+        <td ng-repeat="col in config.columns">
+            <a ng-if="config.nameField===col.fieldName"
+               ng-click="onNameClicked(item, $event)">
+                <span ng-if="col.dataType!=='datetime'">
+                    {{item[col.fieldName]}}
+                </span>
+                <span ng-if="col.dataType==='datetime'">
+                    {{item[col.fieldName]|date:col.format}}
+                </span>
+            </a>
+            <span ng-if="config.nameField!==col.fieldName &&
+col.dataType!=='datetime'">
+                {{item[col.fieldName]}}
+            </span>
+            <span ng-if="config.nameField!==col.fieldName &&
+col.dataType==='datetime'">
+                {{item[col.fieldName]|date:col.format}}
+            </span>
+        </td>
+    </tr>
+</table>
+<div class="paging-bar">
+    <button class="btn btn-default" ng-click="getFirstPage()"
+            ng-disabled="!canGoBack()">
+        &lt;&lt;
+    </button>
+    <button class="btn btn-default" ng-click="getPrevPage()"
+            ng-disabled="!canGoBack()">
+        &lt;
+    </button>
+    <span>{{getPagingLabel()}}</span>
+    <button class="btn btn-default" ng-click="getNextPage()"
+            ng-disabled="!canGoForward()">
+        &gt;
+    </button>
+    <button class="btn btn-default" ng-click="getLastPage()"
+            ng-disabled="!canGoForward()">
+        &gt;&gt;
+    </button>
+</div>
+<div class="load-indicator"
+     ng-if="config.loadIndicator.visible && loading">
+    <div class="load-indicator-background">
+        <span class="load-indicator-message">
+            {{config.loadIndicator.message}}
+        </span>
+    </div>
+</div>
+

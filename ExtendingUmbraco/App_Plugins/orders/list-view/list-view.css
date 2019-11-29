@@ -1,0 +1,73 @@
+﻿list-view {
+    margin: 20px;
+    position: relative;
+    display:block;
+}
+
+    list-view table {
+        width: 100%;
+        border: 1px solid gray;
+    }
+
+        list-view table th {
+            text-align: left;
+            background-color: #fafafa;
+            padding: 5px;
+            border: 1px solid gray;
+            font-weight: normal;
+        }
+
+            list-view table th:first-child {
+                width: 15px;
+            }
+
+        list-view table td {
+            padding: 5px;
+        }
+    list-view .can-select {
+        cursor: pointer;
+    }
+
+    list-view .selected-row {
+        background-color: #fafafa;
+    }
+    list-view th.sortable {
+        cursor: pointer;
+        font-weight: bold;
+    }
+    list-view .load-indicator {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(225,225,225,0.6);
+        display: flex;
+        justify-content: center;
+    }
+
+    list-view .load-indicator-background {
+        border: 1px solid gray;
+        background-color: #fafafa;
+        display: flex;
+        align-self: center;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        min-width: 150px;
+        min-height: 50px;
+    }
+    list-view table tr:nth-child(2) th {
+        padding: 0;
+        background-color: white;
+    }
+
+        list-view table tr:nth-child(2) th .input-container {
+            display: flex;
+        }
+
+    list-view .filter-control {
+        margin: 0;
+        width: 100%;
+        padding: 5px;
+    }

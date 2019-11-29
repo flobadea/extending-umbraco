@@ -13,10 +13,16 @@
     "~/App_Plugins/orders/backoffice/ordersTree/orders.controller.js",
     "~/App_Plugins/orders/dashboards/services-dashboard.controller.js",
     "~/App_Plugins/orders/dashboards/directives-dashboard.controller.js",
-    "~/App_Plugins/orders/dashboards/editors.controller.js"
+    "~/App_Plugins/orders/dashboards/editors.controller.js",
+    "~/App_Plugins/orders/dashboards/list-view-dashboard.controller.js",
+    "~/App_Plugins/orders/list-view/list-view.directive.js",
+    "~/App_Plugins/orders/list-view/list-view.controller.js",
+    "~/App_Plugins/orders/people.service.js"
+
   ],
   "css": [
     "~/App_Plugins/orders/dashboards/dashboard.css",
-    "~/App_Plugins/orders/common/dialog.css"
+    "~/App_Plugins/orders/common/dialog.css",
+    "~/App_Plugins/orders/list-view/list-view.css"
   ]
 }
