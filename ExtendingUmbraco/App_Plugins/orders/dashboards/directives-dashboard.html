@@ -1,0 +1,114 @@
+﻿<div ng-controller="DirectivesDashboardController as vm">
+    <div>
+        <umb-button action="vm.onRefresh()"
+                    type="button"
+                    button-style="success"
+                    state="vm.buttonState"
+                    shortcut="ctrl+r"
+                    label="Refresh Data"
+                    disabled="vm.buttonState === 'busy'">
+        </umb-button>
+        <umb-button-group ng-if="vm.options"
+                          sub-buttons="vm.options.subButtons"
+                          direction="down"
+                          default-button="vm.options.defaultButton"
+                          float="left">
+        </umb-button-group>
+
+    </div>
+    <div>
+        <umb-toggle checked="vm.checked"
+                    on-click="vm.toggle()"
+                    show-labels="true"
+                    label-on="Start"
+                    label-off="Stop"
+                    label-position="right"
+                    hide-icons="false">
+        </umb-toggle>
+    </div>
+    <div style="margin:20px 0">
+        <span>Confirm</span>
+        <div style="display:inline-block;position:relative;">
+            <i class="icon-trash" ng-click="vm.showPrompt()"></i>
+            <umb-confirm-action ng-if="vm.promptIsVisible"
+                                direction="right"
+                                on-confirm="vm.confirmAction()"
+                                on-cancel="vm.hidePrompt()">
+            </umb-confirm-action>
+        </div>
+    </div>
+    <div>
+        <div ng-mouseover="vm.mouseOver($event)"
+             ng-mouseleave="vm.mouseLeave()">
+            I have a tooltip
+        </div>
+        <umb-tooltip ng-if="vm.tooltip.show"
+                     event="vm.tooltip.event">
+            <div>Tooltip content</div>
+        </umb-tooltip>
+        <div style="position: relative;">
+            <umb-button type="button" label="Pick"
+                        action="vm.toggleDropdown()">
+            </umb-button>
+            <umb-dropdown ng-if="vm.dropdownOpen" on-close="vm.closeDropdown()" umb-keyboard-list>
+                <umb-dropdown-item ng-repeat="item in vm.items">
+                    <a href="" ng-click="vm.selectDropdown(item)">{{ item.name }}</a>
+                </umb-dropdown-item>
+            </umb-dropdown>
+        </div>
+        <umb-date-time-picker options="vm.config"
+                              on-change="vm.pickerChange(event)"
+                              on-error="vm.pickerError(event)">
+        </umb-date-time-picker>
+    </div>
+    <div style="margin:20px 0">
+        <div style="margin:20px 0">Grid Content</div>
+        <umb-content-grid content="vm.items"
+                          content-properties="vm.itemProperties"
+                          on-click="vm.clickItem"
+                          on-click-name="vm.clickName">
+        </umb-content-grid>
+    </div>
+    <div style="margin:20px 0">
+        <div style="margin:20px 0">Table</div>
+        <umb-table ng-if="vm.tableItems"
+                   items="vm.tableItems"
+                   on-select-all="vm.tableSelectAll"
+                   on-selected-all="vm.tableSelectedAll"
+                   item-properties="vm.includeProperties"
+                   allow-select-all="true"
+                   on-select="vm.tableSelectItem"
+                   on-click="vm.tableClickItem"
+                   on-sorting-direction="vm.sortDirectionChanged"
+                   on-sort="vm.sortChanged">
+        </umb-table>
+    </div>
+    <div style="margin:20px 0">
+        <div style="margin:20px 0">Control Group Directive</div>
+        <form novalidate name="form" class="form-horizontal" val-form-manager>
+            <div class="alert alert-error property-error"
+                 ng-show="vm.showValidation && form.name.$error.required">
+                Property has errors
+            </div>
+            <umb-control-group label="Name"
+                               description="This is the description"
+                               alias="name"
+                               label-for="name"
+                               required="true"
+                               hide-label="false">
+                <input type="text" name="name"
+                       class="umb-editor umb-textstring textstring"
+                       ng-model="vm.model.name" required />
+                <span class="help-inline"
+                      ng-show="vm.showValidation && form.name.$error.required">
+                    Required
+                </span>
+            </umb-control-group>
+            <umb-button action="vm.submit()"
+                        type="button"
+                        button-style="success"
+                        label="Submit">
+            </umb-button>
+        </form>
+    </div>
+</div>

@@ -16,10 +16,12 @@
   </area>
   <area alias="general">
     <key alias="refresh">Refresh</key>
+    <key alias="op1">Default</key>
+    <key alias="op2">Option2</key>
+    <key alias="op3">Option3</key>
   </area>
   <area alias="demo">
     <key alias="header">Header</key>
     <key alias="header2">Header %0% %1%</key>
   </area>
-
 </language>
