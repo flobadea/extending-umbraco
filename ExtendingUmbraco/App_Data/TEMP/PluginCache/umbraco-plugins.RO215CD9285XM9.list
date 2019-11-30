@@ -458,7 +458,12 @@ ExtendingUmbraco.OrderManagement.CustomAction, ExtendingUmbraco, Version=1.0.0.0
 ExtendingUmbraco.OrderManagement.MenuRenderingSubscriber, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 ExtendingUmbraco.OrderManagement.OrderManagementApplication, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 ExtendingUmbraco.OrderManagement.OrderManagementTreeController, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+ExtendingUmbraco.OrderManagement.OrdersHandler, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 ExtendingUmbraco.OrderManagement.Startup, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+ExtendingUmbraco.Controllers.CategoriesApiController, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+ExtendingUmbraco.Controllers.OrdersApiController, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+ExtendingUmbraco.Controllers.ProductsApiController, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+ExtendingUmbraco.Controllers.SalesApiController, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 umbraco.MacroEngines.RazorMacroEngine, umbraco.MacroEngines, Version=1.0.6974.19966, Culture=neutral, PublicKeyToken=null
 umbraco.cms.businesslogic.packager.standardPackageActions.addApplication, cms, Version=1.0.6974.19961, Culture=neutral, PublicKeyToken=null
 umbraco.cms.businesslogic.packager.standardPackageActions.addDashboardSection, cms, Version=1.0.6974.19961, Culture=neutral, PublicKeyToken=null
@@ -560,6 +565,7 @@ umbraco.providers.members.MembershipEventHandler, umbraco.providers, Version=1.0
 umbraco.BusinessLogic.ApplicationRegistrar, businesslogic, Version=1.0.6974.19961, Culture=neutral, PublicKeyToken=null
 umbraco.BusinessLogic.ApplicationTreeRegistrar, businesslogic, Version=1.0.6974.19961, Culture=neutral, PublicKeyToken=null
 ExtendingUmbraco.OrderManagement.MenuRenderingSubscriber, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+ExtendingUmbraco.OrderManagement.OrdersHandler, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 ExtendingUmbraco.OrderManagement.Startup, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
@@ -680,6 +686,10 @@ Umbraco.Web.Editors.SectionController, umbraco, Version=1.0.6974.19963, Culture=
 Umbraco.Web.Editors.MediaController, umbraco, Version=1.0.6974.19963, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Umbraco.ModelsBuilderBackOfficeController, Umbraco.ModelsBuilder, Version=3.0.10.102, Culture=neutral, PublicKeyToken=null
 ExtendingUmbraco.OrderManagement.OrderManagementTreeController, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+ExtendingUmbraco.Controllers.CategoriesApiController, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+ExtendingUmbraco.Controllers.OrdersApiController, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+ExtendingUmbraco.Controllers.ProductsApiController, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+ExtendingUmbraco.Controllers.SalesApiController, ExtendingUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Web.Trees.TreeController
 Umbraco.Web.Trees.TreeAttribute

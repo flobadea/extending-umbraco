@@ -23,7 +23,7 @@ namespace ExtendingUmbraco.OrderManagement
             if (!dbSchema.TableExist<Product>())
             {
                 dbSchema.CreateTable<Product>(false);
-                ctx.Database.Execute("ALTER TABLE Product ADD CONSTRAINT UC_ProductName UNIQUE(Name);");
+                ctx.Database.Execute("ALTER TABLE Products ADD CONSTRAINT UC_ProductName UNIQUE(Name);");
             }
             if (!dbSchema.TableExist<Order>())
             {
