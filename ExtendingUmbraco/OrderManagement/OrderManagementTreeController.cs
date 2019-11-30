@@ -34,6 +34,12 @@ namespace ExtendingUmbraco.OrderManagement
                 item.Icon = "add";
                 menu.Items.Add(item);
             }
+            else if (id == "2")
+            {
+                menu.Items.Add<CreateProductMenuItem, ActionNew>(
+          textService.Localize(ActionNew.Instance.Alias, culture));
+            }
+
             return menu;
 
         }

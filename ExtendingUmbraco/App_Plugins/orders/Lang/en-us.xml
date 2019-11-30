@@ -31,5 +31,10 @@
     <key alias="save">Save</key>
     <key alias="delete">Delete Category</key>
   </area>
+  <area alias="products">
+    <key alias="save">Save</key>
+    <key alias="delete">Delete Product</key>
+    <key alias="back">Back to List</key>
+  </area>
 
 </language>

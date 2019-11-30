@@ -258,6 +258,7 @@
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
     <Content Include="App_Plugins\orders\backoffice\demoTree\list.html" />
     <Content Include="App_Plugins\orders\backoffice\ordersTree\categories.html" />
+    <Content Include="App_Plugins\orders\backoffice\ordersTree\product.html" />
     <Content Include="App_Plugins\orders\categories\categories.controller.js" />
     <Content Include="App_Plugins\orders\categories\categories.css" />
     <Content Include="App_Plugins\orders\categories\categories.service.js" />
@@ -296,6 +297,9 @@
     <Content Include="App_Plugins\orders\list-view\list-view.directive.js" />
     <Content Include="App_Plugins\orders\list-view\list-view.html" />
     <Content Include="App_Plugins\orders\people.service.js" />
+    <Content Include="App_Plugins\orders\products\product.controller.js" />
+    <Content Include="App_Plugins\orders\products\products.controller.js" />
+    <Content Include="App_Plugins\orders\products\products.css" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\Lang\cs-CZ.user.xml" />
     <Content Include="config\Lang\da-DK.user.xml" />
@@ -324,6 +328,7 @@
     <Compile Include="Controllers\OrdersApiController.cs" />
     <Compile Include="Controllers\ProductsApiController.cs" />
     <Compile Include="Controllers\SalesApiController.cs" />
+    <Compile Include="OrderManagement\CreateProductMenuItem.cs" />
     <Compile Include="OrderManagement\CustomAction.cs" />
     <Compile Include="OrderManagement\CustomMenuItem.cs" />
     <Compile Include="OrderManagement\DemoTreeController.cs" />
@@ -387,6 +392,7 @@
     <Content Include="config\404handlers.config" />
     <Content Include="App_Plugins\orders\package.manifest" />
     <Content Include="App_Plugins\orders\backoffice\ordersTree\orders.controller.js" />
+    <Content Include="App_Plugins\orders\products\products.service.js" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />

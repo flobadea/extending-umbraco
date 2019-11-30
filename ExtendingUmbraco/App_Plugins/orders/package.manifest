@@ -21,14 +21,18 @@
 
     "~/App_Plugins/orders/categories/categories.controller.js",
     "~/App_Plugins/orders/categories/category.controller.js",
-    "~/App_Plugins/orders/categories/categories.service.js"
+    "~/App_Plugins/orders/categories/categories.service.js",
 
+    "~/App_Plugins/orders/products/product.controller.js",
+    "~/App_Plugins/orders/products/products.controller.js",
+    "~/App_Plugins/orders/products/products.service.js"
 
   ],
   "css": [
     "~/App_Plugins/orders/dashboards/dashboard.css",
     "~/App_Plugins/orders/common/dialog.css",
     "~/App_Plugins/orders/list-view/list-view.css",
-    "~/App_Plugins/orders/categories/categories.css"
+    "~/App_Plugins/orders/categories/categories.css",
+    "~/App_Plugins/orders/products/products.css"
   ]
 }

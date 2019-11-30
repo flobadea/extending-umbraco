@@ -1,0 +1,33 @@
+﻿<div ng-controller="ProductController as vm">
+    <form novalidate name="form" class="form-horizontal" val-form-manager>
+        <umb-editor-view>
+            <umb-editor-header name="vm.model.name"
+                               name-locked="true"
+                               hide-alias="true"
+                               hide-description="true"
+                               hide-icon="true">
+            </umb-editor-header>
+            <umb-editor-container>
+                <umb-property property="item" ng-repeat="item in vm.properties">
+                    <umb-property-editor model="item"></umb-property-editor>
+                </umb-property>
+            </umb-editor-container>
+            <umb-editor-footer>
+                <umb-editor-footer-content-left>
+                    <umb-button action="vm.onBack()"
+                                type="link"
+                                label-key="products_back">
+                    </umb-button>
+                </umb-editor-footer-content-left>
+                <umb-editor-footer-content-right>
+                    <umb-button action="vm.submit()"
+                                type="button"
+                                button-style="success"
+                                state="vm.saveState"
+                                label-key="products_save">
+                    </umb-button>
+                </umb-editor-footer-content-right>
+            </umb-editor-footer>
+        </umb-editor-view>
+    </form>
+</div>
