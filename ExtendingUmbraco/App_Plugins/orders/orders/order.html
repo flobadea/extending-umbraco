@@ -1,0 +1,21 @@
+﻿<umb-control-group label="Address" description="Shipping Address">
+    <span>{{model.model.shippingAddress}}</span>
+</umb-control-group>
+<umb-control-group label="Status" description="Order Status">
+    <select name="status" ng-model="model.model.statusId"
+            ng-options="item.id as item.value for item in model.items"
+            required>
+    </select>
+</umb-control-group>
+<umb-control-group label="Created" description="Created At">
+    <span>{{model.model.createdAt|date:'yyyy-MM-dd HH:mm:ss'}}</span>
+</umb-control-group>
+<umb-control-group label="Shipped" description="Shipped At">
+    <span>{{model.model.shippedAt|date:'yyyy-MM-dd HH:mm:ss'}}</span>
+</umb-control-group>
+<umb-control-group label="Delivered" description="Delivered At">
+    <span>{{model.model.deliveredAt|date:'yyyy-MM-dd HH:mm:ss'}}</span>
+</umb-control-group>
+<umb-control-group label="Total" description="Total Order Price">
+    <span>{{model.model.total|number}}</span>
+</umb-control-group>

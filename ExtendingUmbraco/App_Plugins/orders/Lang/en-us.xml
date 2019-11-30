@@ -36,5 +36,15 @@
     <key alias="delete">Delete Product</key>
     <key alias="back">Back to List</key>
   </area>
-
+  <area alias="orders">
+    <key alias="back">Back to List</key>
+    <key alias="delete">Delete Order</key>
+    <key alias="save">Save</key>
+    <key alias="cancel">Cancel</key>
+    <key alias="required">Field is required</key>
+    <key alias="invalid">Field is invalid</key>
+    <key alias="qty">Quantity</key>
+    <key alias="product">Product</key>
+    <key alias="price">Price</key>
+  </area>
 </language>

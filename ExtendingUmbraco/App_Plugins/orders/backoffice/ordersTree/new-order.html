@@ -1,0 +1,65 @@
+﻿<div ng-controller="NewOrderController as vm" class="new-order">
+    <form novalidate name="form" class="form-horizontal" val-form-manager>
+        <umb-editor-view>
+            <umb-editor-header name="'New Order'"
+                               name-locked="true"
+                               hide-alias="true"
+                               hide-description="true"
+                               hide-icon="true">
+            </umb-editor-header>
+            <umb-editor-container>
+                <div class="alert alert-error property-error"
+                     ng-show="form.shippingAddress.$error.required">
+                    Property has errors
+                </div>
+                <umb-control-group label="Address" description="Shipping Address"
+                                   label-for="shippingAddress" required="true">
+                    <input type="text" class="umb-editor umb-textstring"
+                           required ng-model="vm.model.shippingAddress"
+                           name="shippingAddress" />
+                </umb-control-group>
+                <div class="alert alert-error property-error"
+                     ng-show="form.items.$error.required">
+                    Property has errors
+                </div>
+                <umb-control-group label="Items" description="Order Items"
+                                   required="true">
+                    <div class="button-row">
+                        <span class="row-item" ng-click="vm.addItem()" title="Add">
+                            <i class="fa fa-plus"></i>
+                        </span>
+                        <span class="row-item" ng-disabled="!vm.selectedItem"
+                              ng-click="vm.editItem()" title="Edit">
+                            <i class="fa fa-edit"></i>
+                        </span>
+                        <span class="row-item" ng-disabled="!vm.selectedItem"
+                              ng-click="vm.deleteItem()" title="Remove">
+                            <i class="fa fa-trash"></i>
+                        </span>
+                    </div>
+                    <div class="list-view-container">
+                        <list-view config="vm.gridConfig"></list-view>
+                    </div>
+                    <input type="hidden" name="items" required ng-model="vm.itemString" />
+                </umb-control-group>
+
+            </umb-editor-container>
+            <umb-editor-footer>
+                <umb-editor-footer-content-left>
+                    <umb-button action="vm.onBack()"
+                                type="link"
+                                label-key="orders_back">
+                    </umb-button>
+                </umb-editor-footer-content-left>
+                <umb-editor-footer-content-right>
+                    <umb-button action="vm.submit()"
+                                type="button"
+                                button-style="success"
+                                state="vm.saveState"
+                                label-key="orders_save">
+                    </umb-button>
+                </umb-editor-footer-content-right>
+            </umb-editor-footer>
+        </umb-editor-view>
+    </form>
+</div>

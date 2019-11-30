@@ -258,6 +258,8 @@
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
     <Content Include="App_Plugins\orders\backoffice\demoTree\list.html" />
     <Content Include="App_Plugins\orders\backoffice\ordersTree\categories.html" />
+    <Content Include="App_Plugins\orders\backoffice\ordersTree\new-order.html" />
+    <Content Include="App_Plugins\orders\backoffice\ordersTree\order.html" />
     <Content Include="App_Plugins\orders\backoffice\ordersTree\product.html" />
     <Content Include="App_Plugins\orders\categories\categories.controller.js" />
     <Content Include="App_Plugins\orders\categories\categories.css" />
@@ -296,6 +298,15 @@
     <Content Include="App_Plugins\orders\list-view\list-view.css" />
     <Content Include="App_Plugins\orders\list-view\list-view.directive.js" />
     <Content Include="App_Plugins\orders\list-view\list-view.html" />
+    <Content Include="App_Plugins\orders\orders\line-items.html" />
+    <Content Include="App_Plugins\orders\orders\new-order.controller.js" />
+    <Content Include="App_Plugins\orders\orders\order-item-dialog.html" />
+    <Content Include="App_Plugins\orders\orders\order-item.controller.js" />
+    <Content Include="App_Plugins\orders\orders\order-items.service.js" />
+    <Content Include="App_Plugins\orders\orders\order.controller.js" />
+    <Content Include="App_Plugins\orders\orders\order.html" />
+    <Content Include="App_Plugins\orders\orders\orders.css" />
+    <Content Include="App_Plugins\orders\orders\orders.service.js" />
     <Content Include="App_Plugins\orders\people.service.js" />
     <Content Include="App_Plugins\orders\products\product.controller.js" />
     <Content Include="App_Plugins\orders\products\products.controller.js" />
@@ -328,6 +339,7 @@
     <Compile Include="Controllers\OrdersApiController.cs" />
     <Compile Include="Controllers\ProductsApiController.cs" />
     <Compile Include="Controllers\SalesApiController.cs" />
+    <Compile Include="OrderManagement\CreateOrderMenuItem.cs" />
     <Compile Include="OrderManagement\CreateProductMenuItem.cs" />
     <Compile Include="OrderManagement\CustomAction.cs" />
     <Compile Include="OrderManagement\CustomMenuItem.cs" />
@@ -391,7 +403,7 @@
     <Content Include="config\applications.config" />
     <Content Include="config\404handlers.config" />
     <Content Include="App_Plugins\orders\package.manifest" />
-    <Content Include="App_Plugins\orders\backoffice\ordersTree\orders.controller.js" />
+    <Content Include="App_Plugins\orders\orders\orders.controller.js" />
     <Content Include="App_Plugins\orders\products\products.service.js" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />

@@ -39,7 +39,11 @@ namespace ExtendingUmbraco.OrderManagement
                 menu.Items.Add<CreateProductMenuItem, ActionNew>(
           textService.Localize(ActionNew.Instance.Alias, culture));
             }
-
+            else if (id == "1")
+            {
+                menu.Items.Add<CreateOrderMenuItem, ActionNew>(
+             textService.Localize(ActionNew.Instance.Alias, culture));
+            }
             return menu;
 
         }

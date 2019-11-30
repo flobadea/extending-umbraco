@@ -10,7 +10,7 @@
     "~/App_Plugins/orders/dashboards/dashboard.service.js",
     "~/App_Plugins/orders/dashboards/top5.controller.js",
     "~/App_Plugins/orders/dashboards/sales.controller.js",
-    "~/App_Plugins/orders/backoffice/ordersTree/orders.controller.js",
+    
     "~/App_Plugins/orders/dashboards/services-dashboard.controller.js",
     "~/App_Plugins/orders/dashboards/directives-dashboard.controller.js",
     "~/App_Plugins/orders/dashboards/editors.controller.js",
@@ -25,7 +25,14 @@
 
     "~/App_Plugins/orders/products/product.controller.js",
     "~/App_Plugins/orders/products/products.controller.js",
-    "~/App_Plugins/orders/products/products.service.js"
+    "~/App_Plugins/orders/products/products.service.js",
+
+    "~/App_Plugins/orders/orders/orders.controller.js",
+    "~/App_Plugins/orders/orders/order.controller.js",
+    "~/App_Plugins/orders/orders/new-order.controller.js",
+    "~/App_Plugins/orders/orders/order-item.controller.js",
+    "~/App_Plugins/orders/orders/orders.service.js",
+    "~/App_Plugins/orders/orders/order-items.service.js"
 
   ],
   "css": [
@@ -33,6 +40,7 @@
     "~/App_Plugins/orders/common/dialog.css",
     "~/App_Plugins/orders/list-view/list-view.css",
     "~/App_Plugins/orders/categories/categories.css",
-    "~/App_Plugins/orders/products/products.css"
+    "~/App_Plugins/orders/products/products.css",
+    "~/App_Plugins/orders/orders/orders.css"
   ]
 }

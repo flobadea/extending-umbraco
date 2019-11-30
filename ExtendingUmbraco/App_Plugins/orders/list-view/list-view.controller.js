@@ -1,8 +1,9 @@
 ﻿(function () {
     'use strict';
     var app = angular.module('orders');
-    app.controller('ListViewController', ['$scope', '$timeout', listViewController]);
-    function listViewController($scope, $timeout) {
+    app.controller('ListViewController', ['$scope', '$timeout',
+        'filterFilter', 'orderByFilter', listViewController]);
+    function listViewController($scope, $timeout, filterFilter, orderByFilter) {
         function getPage(page, pageSize) {
             var params = {
                 page: page,

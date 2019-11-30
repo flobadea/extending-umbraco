@@ -1,3 +1,22 @@
 ﻿<div ng-controller="OrdersController as vm">
-    
+    <umb-editor-view>
+        <umb-editor-header name="'Orders'"
+                           name-locked="true"
+                           hide-alias="true"
+                           hide-description="true"
+                           hide-icon="true">
+        </umb-editor-header>
+        <umb-editor-container>
+            <list-view config="vm.config"></list-view>
+        </umb-editor-container>
+        <umb-editor-footer>
+            <umb-button action="vm.onDelete()"
+                        type="button"
+                        button-style="danger"
+                        state="vm.deleteState"
+                        label-key="orders_delete"
+                        disabled="vm.isDeleteDisabled()">
+            </umb-button>
+        </umb-editor-footer>
+    </umb-editor-view>
 </div>

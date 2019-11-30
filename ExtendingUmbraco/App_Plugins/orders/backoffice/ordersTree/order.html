@@ -1,0 +1,35 @@
+﻿<div ng-controller="OrderController as vm">
+    <form novalidate name="form" class="form-horizontal" val-form-manager>
+        <umb-editor-view>
+            <umb-editor-header name="'Order Details'"
+                               navigation="vm.navigation"
+                               name-locked="true"
+                               hide-alias="true"
+                               hide-description="true"
+                               hide-icon="true">
+            </umb-editor-header>
+            <umb-editor-container>
+                <umb-editor-sub-views sub-views="vm.navigation"
+                                      model="vm.model">
+                </umb-editor-sub-views>
+            </umb-editor-container>
+            <umb-editor-footer>
+                <umb-editor-footer-content-left>
+                    <umb-button action="vm.onBack()"
+                                type="link"
+                                label-key="orders_back">
+                    </umb-button>
+                </umb-editor-footer-content-left>
+                <umb-editor-footer-content-right>
+                    <umb-button action="vm.submit()"
+                                type="button"
+                                button-style="success"
+                                state="vm.saveState"
+                                label-key="orders_save"
+                                disabled="form.$invalid">
+                    </umb-button>
+                </umb-editor-footer-content-right>
+            </umb-editor-footer>
+        </umb-editor-view>
+    </form>
+</div>

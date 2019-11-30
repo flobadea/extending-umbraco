@@ -1,0 +1,37 @@
+﻿<div ng-controller="OrderItemController as vm" class="order-item-container">
+    <form name="form" novalidate>
+        <div class="form-content">
+            <label><localize key="orders_product"></localize></label>
+            <select required ng-model="vm.model.id"
+                    name="product" ng-change="vm.onChange()"
+                    ng-options="item.id as item.name for item in vm.products" />
+            <div ng-show="form.$invalid">
+                <span class="error" ng-show="form.product.$error.required">
+                    <localize key="orders_required"></localize>
+                </span>
+            </div>
+            <label><localize key="orders_price"></localize></label>
+            <div>{{vm.model.product.price||'N/A'}}</div>
+            <label><localize key="orders_qty"></localize></label>
+            <input type="number" required min="0" max="100"
+                   ng-model="vm.model.qty" name="qty" />
+            <div ng-show="form.$invalid">
+                <span class="error" ng-show="form.qty.$error.required">
+                    <localize key="orders_required"></localize>
+                </span>
+                <span class="error" ng-show="form.qty.$error">
+                    <localize key="orders_invalid"></localize>
+                </span>
+            </div>
+        </div>
+        <div class="button-bar">
+            <a ng-click="close()"><localize key="orders_cancel"></localize></a>
+            <umb-button action="vm.save()"
+                        type="button"
+                        button-style="success"
+                        label-key="orders_save"
+                        disabled="form.$invalid">
+            </umb-button>
+        </div>
+    </form>
+</div>
