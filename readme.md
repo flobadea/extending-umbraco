@@ -2,9 +2,8 @@ This repository is the full source code for the "Extending the Umbraco 7 Backoff
 
 The commits follow the book structure. This means the first commit has the source code for the second chapter. The second commit has the source code for the third chapter and so on. The chapters add to the previous ones meaning that the last commit has the full source code.
 
-========================
-LINKS:
-========================
+You can buy the book at the links below:
+
 Amazon:
 https://www.amazon.com/Extending-Umbraco-Backoffice-Florin-Badea-ebook/dp/B07RTWGHG1
 
