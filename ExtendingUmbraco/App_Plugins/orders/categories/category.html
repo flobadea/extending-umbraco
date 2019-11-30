@@ -1,0 +1,25 @@
+﻿<div ng-controller="CategoryController as vm" class="category-container">
+    <form name="form" novalidate>
+        <div class="form-content">
+            <label><localize key="categories_label"></localize></label>
+            <input required ng-model="vm.model.name" name="name" />
+            <div ng-show="form.$invalid">
+                <span class="error" ng-show="form.name.$error.required">
+                    <localize key="categories_required"></localize>
+                </span>
+            </div>
+        </div>
+        <div class="button-bar">
+            <a ng-click="vm.close()">
+                <localize key="categories_cancel"></localize>
+            </a>
+            <umb-button action="vm.submit()"
+                        type="button"
+                        button-style="success"
+                        state="vm.saveState"
+                        label-key="categories_save"
+                        disabled="form.$invalid">
+            </umb-button>
+        </div>
+    </form>
+</div>

@@ -17,7 +17,25 @@ namespace ExtendingUmbraco.OrderManagement
             //return CreateMenuSimple(id, queryStrings);
             //return CreateMenuParamRoute(id, queryStrings);
             //return CreateMenuMoreItems(id, queryStrings);
-            return CreateMenuCustomAction(id, queryStrings);
+            //return CreateMenuCustomAction(id, queryStrings);
+            var textService = ApplicationContext.Services.TextService;
+            var culture = CultureInfo.CurrentCulture;
+            var menu = new MenuItemCollection();
+            if (id == "-1")
+            {
+                return null;
+            }
+            else if (id == "3")
+            {
+                var item = new MenuItem("create",
+            textService.Localize(ActionNew.Instance.Alias, culture));
+                item.LaunchDialogView("/App_Plugins/orders/categories/category.html",
+                   textService.Localize("create", culture));
+                item.Icon = "add";
+                menu.Items.Add(item);
+            }
+            return menu;
+
         }
         private MenuItemCollection CreateMenuCustomAction(string id, FormDataCollection queryStrings)
         {
@@ -71,7 +89,7 @@ namespace ExtendingUmbraco.OrderManagement
                 (textService.Localize(ActionNew.Instance.Alias, culture));
             return menu;
         }
-            private MenuItemCollection CreateMenuSimple(string id, FormDataCollection queryStrings)
+        private MenuItemCollection CreateMenuSimple(string id, FormDataCollection queryStrings)
         {
             var textService = ApplicationContext.Services.TextService;
             var culture = CultureInfo.CurrentCulture;

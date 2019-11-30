@@ -24,4 +24,12 @@
     <key alias="header">Header</key>
     <key alias="header2">Header %0% %1%</key>
   </area>
+  <area alias="categories">
+    <key alias="label">Category Name</key>
+    <key alias="required">Category name is required</key>
+    <key alias="cancel">Cancel</key>
+    <key alias="save">Save</key>
+    <key alias="delete">Delete Category</key>
+  </area>
+
 </language>

@@ -258,6 +258,11 @@
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
     <Content Include="App_Plugins\orders\backoffice\demoTree\list.html" />
     <Content Include="App_Plugins\orders\backoffice\ordersTree\categories.html" />
+    <Content Include="App_Plugins\orders\categories\categories.controller.js" />
+    <Content Include="App_Plugins\orders\categories\categories.css" />
+    <Content Include="App_Plugins\orders\categories\categories.service.js" />
+    <Content Include="App_Plugins\orders\categories\category.controller.js" />
+    <Content Include="App_Plugins\orders\categories\category.html" />
     <Content Include="App_Plugins\orders\common\confirmation.controller.js" />
     <Content Include="App_Plugins\orders\common\confirmation.html" />
     <Content Include="App_Plugins\orders\backoffice\ordersTree\create.html" />
